@@ -1,0 +1,501 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ .header{
+    background:radial-gradient(#fff,#ec9d80);
+} 
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right:25px;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    margin-top: -10px ;
+}
+.header ul li{
+    font-family: baloo-bhai;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+} 
+#search{
+    width: 300px;
+    float: left;
+    margin-left: 400px;
+    margin-top: -20px;
+
+}
+
+.search{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #0e0d0d;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#search .butn{
+    width: 100px;
+    height: 40px;
+    background: white;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #020000;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+#search .butn:hover{
+    background: #ec9d80;
+    color: #000;
+}
+
+#search .butn:focus{
+    outline: none;
+}
+
+#search .search:focus{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(131, 130, 130);
+}
+p{
+    color: black;
+}
+.btn{
+    padding:5px;
+    margin-top: 10px;
+    background-color: rgb(248, 67, 43);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.btn a{
+    padding: 8px;
+    color: white;
+    transition: 0.5s;
+}
+.btn a:hover{
+    color: rgb(242, 4, 4);
+}
+.btn:hover{
+    background-color: rgb(255, 253, 253);
+    color: rgb(28, 19, 19);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col1{
+    flex-basis: 40%;
+    min-width: 150px;
+}
+.col1 img{
+    max-width: 100%;
+    padding: 10px 0px;
+}
+
+.col1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+}
+
+.catagories{
+    margin: 70px 0px;
+}
+
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col3{
+    flex-basis: 25%;
+    padding: 20px;
+    transition: 0.3s;
+    min-width: 150px;
+    margin-bottom: 50px; 
+}
+.col3 img{
+    width: 100%;
+}
+.col3-3 img{
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+#Bloods {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #Bloods td, #Bloods th {
+    border: 1px solid #dad4d4;
+    padding: 8px;
+  }
+  
+  #Bloods tr:nth-child(even){background-color: #dfdada;}
+  
+  #Bloods tr:hover {
+    background-color: #ddd;
+    color: rgb(247, 4, 4);
+}
+
+#table_head{
+    background-color: red;
+    color: white;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: #d90808;
+}
+
+.title::after{
+    content: '';
+    background-color: #0d0704;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p-title{
+    color: #555;
+    font-weight: normal;
+    
+}
+
+.col3:hover{
+    transform: translateY(-5px);
+    
+}
+
+
+/* CSS for donor profile */
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #f04545;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #eb5252;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    background: #ffffff;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #ffffff;
+    font-size: 1.31rem;
+  }
+/* CSS for advange of blood donation */
+.direction{
+  text-align: center;
+}
+.direction button{
+  font-family: cursive;
+  font-weight: bold;
+  background-color: #eb060644;
+  border:none;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin:0 10px;
+}
+.direction button:hover{
+  background-color: #947272;
+}
+.item{
+  border-radius: 5px;
+  width:342px;
+  background-image: linear-gradient(to top, #f3efef, #f8f7f6);
+  overflow: hidden;
+  transition: 0.5s;
+  margin:10px;
+  scroll-snap-align: start;
+}
+.item .avatar{
+  display: block;
+  margin:50px auto 10px;
+  width:150px;
+  height:100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.item p{
+  padding:30px;
+  font-family: monospace;
+}
+
+#list{
+  display: flex;
+  width:max-content;
+}
+#boxes{
+  width:1100px;
+  max-width: 100%;
+  overflow: auto;
+  margin:100px auto 50px;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
+#boxes::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  .item{
+      width: calc(33.3vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .item{
+      width: calc(50vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
+}
+
+  
+/* Testimonial */
+.testimonial{
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+.testimonial .col3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow:0 0 20px 0px #cfcbcb;
+    cursor: pointer;
+}
+.testimonial .col3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    color: #ff5607;
+    font-size: 32px;
+}
+.col3 p{
+    font-size: 12px;
+    color: gray;
+    margin: 12px 0px;
+}
+
+.footer{
+    background:black;
+    color: white;
+
+}
+.footer p{
+    color: white;
+}
+.footer h3{
+    color: white;
+    
+}
+.footer-col-1 .footer-col-2 .footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    margin-top: 30px;
+    margin-left: 150px;
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    margin-top: 30px;
+    flex: 1;
+    text-align: center;
+    list-style: none;
+}
+.footer-col-2 li{
+    list-style: none;
+}
+.footer-col-3 li{
+    list-style: none;
+}
+
+.footer-col-3{
+    margin-top: 30px;
+    margin-right: 80px;
+    flex: 1;
+    text-align: center;
+}
+
+
+.footer-col-2 ul{
+    margin-top: 20px;
+}
+.footer-col-3 ul{
+    margin-top: 20px;
+}
+
+
+.footer-col-2 .footer-col-3 .footer-col-4{
+    flex-basis: 20%;
+    text-align: center;
+
+}
+.footer-col-2 a{
+    color: white;
+}
+.footer-col-3 a{
+    color: white;
+}
+
+
+.applogo{
+    margin:20px 0px;
+}
+.applogo img{
+    width: 180px;
+}
+.center hr{
+    margin-left:70px;
+    margin-right:70px;
+}
+.center{
+    text-align: center;
+    background: #000;
+    color: white;
+    margin-top: 50px;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="html" href="login.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Index.html"><img src="img/final logo.png" width="180px"></a>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <div id="search">
+                            <input class="search" type="search" name="" placeholder="Type Location">
+                            <a href="#"> <button class="butn">Search</button></a>
+                        </div>
+                        <li> <a href="">Home</a> </li>
+                        <li> <a href="">About</a> </li>
+                        <li> <a href="">Contact US</a> </li>
+                        <li> <a href="signup.html">Sign up</a> </li>
+                        <li> <a href="login.html">Login</a> </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <h1>The gift of blood is a gift<br>to someones life</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed eligendi culpa vel quos
+                        suscipit.</p>
+                    <button class="btn"><a href="post.html">Post for blood &rarr;</a></button>
+                    <button class="btn"><a href="#">Donate blood &rarr;</a></button>
+                </div>
+
+                <div class="col1">
+                    <div id="slideshow">
+                        <img src="img/img1.png" id="image">
+                    </div>
+                    <!-- Java Script for changing picture -->
+                    <script>
+                        var images = ["img/img1.png", "img/img2.png", "img/img3.png", "img/img6.png", "img/img7.png"]; // Add your image URLs here
+                        var currentIndex = 0;
+                        var image = document.getElementById("image");
+
+                        setInterval(function () {
+                            // Increment the index to get the next image
+                            currentIndex = (currentIndex + 1) % images.length;
+
+                            // Set the src attribute of the image to the next image URL
+                            image.src = images[currentIndex];
+                        }, 3000); // Change image every 5 seconds
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Advantage about blood donation-->
+    <div class="catagories">
+        <h1 class="title">Advantage about blood donation</h1>
+        <div class="small-container">
+            <div id="boxes">
+                <div id="list">
+                    <div class="item">
+                        <img src="images/pic-4.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                            adipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic-2.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                            adipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic-3.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                            adipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic-1.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                                adipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic-4.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                            adipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic-5.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                            dipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic-6.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                            adipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic-1.jpg" class="avatar">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem doloribus quos,
+                            adipisci iusto est odit dolore nulla porro a.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="direction">
+                <button id="prev"> < </button>
+                <button id="next"> > </button>
+            </div>
+            <script>
+                document.getElementById('next').onclick = function () {
+                    const widthItem = document.querySelector('.item').offsetWidth;
+                    document.getElementById('boxes').scrollLeft += widthItem;
+                }
+                document.getElementById('prev').onclick = function () {
+                    const widthItem = document.querySelector('.item').offsetWidth;
+                    document.getElementById('boxes').scrollLeft -= widthItem;
+                }
+            </script>
+        </div>
+
+    </div>
+
+    <!--Donators Profiles -->
+    <div class="catagories">
+        <h1 class="title">Donator profiles</h1>
+        <div class="small-container">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="images/img-1.jpeg" alt="img" draggable="false"></div>
+                        <h2>Edhi Mahbub</h2>
+                        <span>Web Developer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-2.jpeg" alt="img" draggable="false"></div>
+                        <h2>Edhi</h2>
+                        <span>Software Engineer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-3.jpeg" alt="img" draggable="false"></div>
+                        <h2>Edhi Mahbub</h2>
+                        <span>Web Developer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-4.jpeg" alt="img" draggable="false"></div>
+                        <h2>Basit Karim</h2>
+                        <span>Informar</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-5.jpeg" alt="img" draggable="false"></div>
+                        <h2>Abdullah Adar </h2>
+                        <span>Designer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-6.jpeg" alt="img" draggable="false"></div>
+                        <h2>Vin Diesel</h2>
+                        <span>Takla</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+            <!-- script for donator profile  -->
+            <script>
+                const wrapper = document.querySelector(".wrapper");
+                const carousel = document.querySelector(".carousel");
+                const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+                const arrowBtns = document.querySelectorAll(".wrapper i");
+                const carouselChildrens = [...carousel.children];
+
+                let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+                // Get the number of cards that can fit in the carousel at once
+                let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+                // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+                carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+                    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+                });
+
+                // Insert copies of the first few cards to end of carousel for infinite scrolling
+                carouselChildrens.slice(0, cardPerView).forEach(card => {
+                    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+                });
+
+                // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+                carousel.classList.add("no-transition");
+                carousel.scrollLeft = carousel.offsetWidth;
+                carousel.classList.remove("no-transition");
+
+                // Add event listeners for the arrow buttons to scroll the carousel left and right
+                arrowBtns.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+                    });
+                });
+
+                const dragStart = (e) => {
+                    isDragging = true;
+                    carousel.classList.add("dragging");
+                    // Records the initial cursor and scroll position of the carousel
+                    startX = e.pageX;
+                    startScrollLeft = carousel.scrollLeft;
+                }
+
+                const dragging = (e) => {
+                    if (!isDragging) return; // if isDragging is false return from here
+                    // Updates the scroll position of the carousel based on the cursor movement
+                    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+                }
+
+                const dragStop = () => {
+                    isDragging = false;
+                    carousel.classList.remove("dragging");
+                }
+
+                const infiniteScroll = () => {
+                    // If the carousel is at the beginning, scroll to the end
+                    if (carousel.scrollLeft === 0) {
+                        carousel.classList.add("no-transition");
+                        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+                        carousel.classList.remove("no-transition");
+                    }
+                    // If the carousel is at the end, scroll to the beginning
+                    else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+                        carousel.classList.add("no-transition");
+                        carousel.scrollLeft = carousel.offsetWidth;
+                        carousel.classList.remove("no-transition");
+                    }
+                }
+
+                //     // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+                //     clearTimeout(timeoutId);
+                //     if (!wrapper.matches(":hover")) autoPlay();
+                // }
+
+                // const autoPlay = () => {
+                //     if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+                //     // Autoplay the carousel after every 2500 ms
+                //     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+                // }
+                // autoPlay();
+                carousel.addEventListener("mousedown", dragStart);
+                carousel.addEventListener("mousemove", dragging);
+                document.addEventListener("mouseup", dragStop);
+                wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+
+            </script>
+        </div>
+    </div>
+
+    <!-------Compatible Blood Type Donors------->
+    <div class="catagories">
+        <h1 class="title">Compatible Blood Type Donors</h1>
+        <div class="small-container">
+            <div class="row">
+                <table id="Bloods">
+                    <tr id="table_head">
+                        <td>Blood Type</td>
+                        <td>Donate Blood To</td>
+                        <td>Receive Blood From</td>
+                    </tr>
+                    <tr>
+                        <td>A+</td>
+                        <td>A+, AB+</td>
+                        <td>A+, A-, O+, O-</td>
+                    </tr>
+
+                    <tr>
+                        <td>O+</td>
+                        <td>A+, AB+, O+, B+</td>
+                        <td>O+, O-</td>
+                    </tr>
+
+                    <tr>
+                        <td>B+</td>
+                        <td>AB+, B+</td>
+                        <td>O+, O-, B+, B-</td>
+                    </tr>
+
+                    <tr>
+                        <td>AB+</td>
+                        <td>AB+</td>
+                        <td>Everyone</td>
+                    </tr>
+
+                    <tr>
+                        <td>B-</td>
+                        <td>B+, AB+, B-, AB-</td>
+                        <td>B-, O-</td>
+                    </tr>
+
+                    <tr>
+                        <td>A-</td>
+                        <td>A+, AB+, A-, AB-</td>
+                        <td>A-, O-</td>
+                    </tr>
+
+                    <tr>
+                        <td>O-</td>
+                        <td>Everyone</td>
+                        <td>O-</td>
+                    </tr>
+
+                    <tr>
+                        <td>AB-</td>
+                        <td>AB-, AB+</td>
+                        <td>AB-, A-, B-, O-</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------Testimonial------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col3">
+                    <i class='fa fa-quote-left'></i>
+                    <p>Blood Donation Is A Small Act Of Kindness That Does Great And Big Wonders.</p>
+                </div>
+                <div class="col3">
+                    <i class='fa fa-quote-left'></i>
+                    <p>Blood Donation Costs You Nothing, But It Can Mean The World To Someone In Need.</p>
+                </div>
+                <div class="col3">
+                    <i class='fa fa-quote-left'></i>
+                    <p>Donate Blood Today So That No One Ever Has To Suffer From A Lack Of Blood.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Footer-------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download app for android and IOS.</p>
+                    <div class="applogo">
+                        <img src="img/appstore.png">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">TWitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Address</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">TWitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="center">
+                <hr>
+                Copyright &copy;All rights reservs
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
