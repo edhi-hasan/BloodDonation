@@ -1,82 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blood Donation Management Admin Panel</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Admin Dashboard</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+	header {
+    background-color: #f10b0b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+.logout {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+	}
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .donator-list {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .donator-list th, .donator-list td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .donator-list th {
+      background-color: #f15959;
+    }
+
+    /* .donator-list tr:nth-child(even) {
+      background-color: #f2f2f2;
+    } */
+
+    .donator-list tr:hover {
+      background-color: #ddd;
+    }
+
+    .action-button {
+      background-color: #ff0000;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Admin Dashboard</h1>
+	<a href="#" class="logout">Logout</a>
+
+  </header>
   <div class="container">
-    <h1>Blood Donation Management Admin Panel</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Donors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Appointments</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Reports</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Dashboard</h2>
-        <div class="card">
-          <div class="card-body">
-            <h4>Recent Donors</h4>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Blood Type</th>
-                  <th>Date Donated</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>John Doe</td>
-                  <td>O+</td>
-                  <td>2023-07-19</td>
-                </tr>
-                <tr>
-                  <td>Jane Doe</td>
-                  <td>A+</td>
-                  <td>2023-07-18</td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Upcoming Appointments</h4>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Blood Type</th>
-                  <th>Date of Appointment</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>John Doe</td>
-                  <td>O+</td>
-                  <td>2023-07-20</td>
-                </tr>
-                <tr>
-                  <td>Jane Doe</td>
-                  <td>A+</td>
-                  <td>2023-07-21</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+    <div class="section">
+      <div class="section-header">Blood Donation Posts</div>
+      <table class="donator-list">
+        <tr>
+          <th>Name</th>
+          <th>Blood Group</th>
+          <th>Location</th>
+          <th>Actions</th>
+        </tr>
+        <!-- Sample data, replace with dynamic data from the backend -->
+        <tr>
+          <td>Ador</td>
+          <td>A+</td>
+          <td>Chittagong</td>
+          <td><button class="action-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Edhi</td>
+          <td>B-</td>
+          <td>Cox'sbazar</td>
+          <td><button class="action-button">Delete</button></td>
+        </tr>
+        <!-- Add more rows for other donations -->
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-header">Donator Profiles</div>
+      <table class="donator-list">
+        <tr>
+          <th>Name</th>
+          <th>Blood Group</th>
+          <th>Contact</th>
+          <th>Actions</th>
+        </tr>
+        <!-- Sample data, replace with dynamic data from the backend -->
+        <tr>
+          <td>Ador</td>
+          <td>A+</td>
+          <td>ador@gmail.com</td>
+          <td><button class="action-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Edhi</td>
+          <td>B-</td>
+          <td>edhi@gmail.com</td>
+          <td><button class="action-button">Delete</button></td>
+        </tr>
+        <!-- Add more rows for other donators -->
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-header">Statistics</div>
+      <!-- Add a div to display the count of donators and donation posts -->
+      <div>Total Donators: <span id="total-donators">0</span></div>
+      <div>Total Donation Posts: <span id="total-posts">0</span></div>
     </div>
   </div>
 </body>
